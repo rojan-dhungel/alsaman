@@ -1,26 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary (Brand - Green) */
+  --color-primary: #2E7D32;
+  --color-primary-light: #66BB6A;
+  --color-primary-dark: #0B3D0B;
+
+  /*  Secondary (Warm - Orange) */
+  --color-secondary: #F57C00;
+  --color-secondary-light: #FFB74D;
+  --color-secondary-dark: #E65100;
+
+  /* Accent (Attention - Red) */
+  --color-accent: #E53935;
+  --color-accent-light: #EF5350;
+  --color-accent-dark: #B71C1C;
+
+  /* Highlight (Soft Yellow) */
+  --color-highlight: #FDD835;
+
+  /* Backgrounds */
+  --color-bg-main: #FDFDF2; /* Adjusted to soft cream/beige */
+  --color-bg-section: #F1F8E9; /* Light organic green */
+  --color-bg-card: #FFFFFF;
+  --color-bg-soft: #F9FBE7;
+
+  /* 🖤 Text */
+  --color-text-primary: #263238;
+  --color-text-secondary: #546E7A;
+  --color-text-light: #FFFFFF;
+
+  /* Borders */
+  --color-border: #E0E0E0;
+
+  /* Shadow */
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  /* Fonts */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Core UI mapping */
+  --background: var(--color-bg-main);
+  --foreground: var(--color-text-primary);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+  
+  --color-primary: var(--color-primary);
+  --color-primary-light: var(--color-primary-light);
+  --color-primary-dark: var(--color-primary-dark);
+  
+  --color-secondary: var(--color-secondary);
+  --color-secondary-light: var(--color-secondary-light);
+  --color-secondary-dark: var(--color-secondary-dark);
+  
+  --color-accent: var(--color-accent);
+  --color-accent-light: var(--color-accent-light);
+  --color-accent-dark: var(--color-accent-dark);
+  
+  --color-highlight: var(--color-highlight);
+  --color-bg-section: var(--color-bg-section);
+  --color-bg-card: var(--color-bg-card);
+  
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-light: var(--color-text-light);
+  
+  --color-border-custom: var(--color-border);
+  --shadow-soft: var(--shadow-soft);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
 }
