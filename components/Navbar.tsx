@@ -23,9 +23,9 @@ export default function Navbar() {
 
           {/* Desktop Links */}
           <div className="hidden lg:flex items-center space-x-1 font-black text-[13px] uppercase tracking-wider">
-            <NavLink href="#home">Home</NavLink>
-            <NavLink href="/about">About Us</NavLink>
-            <NavLink href="#workflow">How we work</NavLink>
+            <NavLink href="/#home">Home</NavLink>
+            <NavLink href="/#about">About Us</NavLink>
+            <NavLink href="/#workflow">How we work</NavLink>
             
             <div className="relative group px-4 py-2 cursor-pointer flex items-center gap-1 group/nav">
               <span className="relative z-10 text-primary-dark/70 group-hover/nav:text-accent transition-colors duration-300">Products</span>
@@ -36,21 +36,23 @@ export default function Navbar() {
               
               {/* Dropdown Menu */}
               <div className="absolute top-full left-0 pt-4 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300">
-                <div className="bg-white rounded-2xl shadow-xl border border-border overflow-hidden min-w-[180px]">
-                  <DropdownLink href="#vegetables">Vegetables</DropdownLink>
-                  <DropdownLink href="#fruits">Fruits</DropdownLink>
-                  <DropdownLink href="#flowers">Flowers</DropdownLink>
+                <div className="bg-white rounded-2xl shadow-xl border border-border overflow-hidden min-w-[280px]">
+                  <DropdownLink href="/products/vegetables">VEGETABLES</DropdownLink>
+                  <DropdownLink href="/products/medicinal-herbs">HERBS, FRUITS & NUTS</DropdownLink>
+                  <DropdownLink href="/products/flowers-leaves">FLOWERS & LEAVES</DropdownLink>
+                  <DropdownLink href="/products/roots-rhizomes">ROOTS & RHIZOMES</DropdownLink>
+                  <DropdownLink href="/products/staples-commodities">STAPLES & COMMODITIES</DropdownLink>
                 </div>
               </div>
             </div>
 
-            <NavLink href="#gallery">Gallery</NavLink>
-            <NavLink href="#blog">Blog</NavLink>
+            <NavLink href="/gallery">Gallery</NavLink>
+            <NavLink href="/blog">Blog</NavLink>
           </div>
 
           {/* Actions */}
-          <div className="hidden lg:flex items-center gap-4">
-            <UniversalButton href="#contact" className="py-2.5 px-6 rounded-full text-sm">
+          <div className="hidden lg:flex items-center space-x-1 font-black text-[13px] uppercase tracking-wider gap-4">
+            <UniversalButton href="/contact" className="py-2.5 px-6 rounded-full text-sm">
               Contact Us
             </UniversalButton>
           </div>
@@ -67,20 +69,22 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`lg:hidden transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? "max-h-[500px] mt-4 opacity-100" : "max-h-0 opacity-0"}`}>
+        <div className={`lg:hidden transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? "max-h-[550px] mt-4 opacity-100" : "max-h-0 opacity-0"}`}>
           <div className="flex flex-col space-y-2 pb-4">
-            <MobileNavLink href="#home">Home</MobileNavLink>
-            <MobileNavLink href="/about">About Us</MobileNavLink>
-            <MobileNavLink href="#workflow">How we work</MobileNavLink>
-            <div className="px-4 py-2 font-bold text-primary-dark border-b border-border/50">Products</div>
-            <MobileNavLink href="#vegetables" className="pl-8 text-sm opacity-80">Vegetables</MobileNavLink>
-            <MobileNavLink href="#fruits" className="pl-8 text-sm opacity-80">Fruits</MobileNavLink>
-            <MobileNavLink href="#flowers" className="pl-8 text-sm opacity-80">Flowers</MobileNavLink>
-            <MobileNavLink href="#gallery">Gallery</MobileNavLink>
-            <MobileNavLink href="#blog">Blog</MobileNavLink>
+            <MobileNavLink href="/#home" onClick={() => setIsMobileMenuOpen(false)}>Home</MobileNavLink>
+            <MobileNavLink href="/#about" onClick={() => setIsMobileMenuOpen(false)}>About Us</MobileNavLink>
+            <MobileNavLink href="/#workflow" onClick={() => setIsMobileMenuOpen(false)}>How we work</MobileNavLink>
+            <div className="px-4 py-2 font-bold text-primary-dark border-b border-border/50 uppercase text-[10px] tracking-widest opacity-40">Products</div>
+            <MobileNavLink href="/products/vegetables" className="pl-8 text-sm opacity-80">VEGETABLES</MobileNavLink>
+            <MobileNavLink href="/products/medicinal-herbs" className="pl-8 text-sm opacity-80">HERBS, FRUITS & NUTS</MobileNavLink>
+            <MobileNavLink href="/products/flowers-leaves" className="pl-8 text-sm opacity-80">FLOWERS & LEAVES</MobileNavLink>
+            <MobileNavLink href="/products/roots-rhizomes" className="pl-8 text-sm opacity-80">ROOTS & RHIZOMES</MobileNavLink>
+            <MobileNavLink href="/products/staples-commodities" className="pl-8 text-sm opacity-80">STAPLES & COMMODITIES</MobileNavLink>
+            <MobileNavLink href="/gallery" onClick={() => setIsMobileMenuOpen(false)}>Gallery</MobileNavLink>
+            <MobileNavLink href="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</MobileNavLink>
             <Link 
-              href="#contact" 
-              className="mt-4 w-full py-3 bg-primary text-white rounded-2xl font-bold text-center shadow-lg"
+              href="/contact" 
+              className="mt-4 w-full py-3 bg-primary text-white rounded-2xl font-bold text-center shadow-lg uppercase text-xs tracking-widest"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact Us
@@ -115,10 +119,11 @@ function DropdownLink({ href, children }: { href: string; children: React.ReactN
   );
 }
 
-function MobileNavLink({ href, children, className = "" }: { href: string; children: React.ReactNode; className?: string }) {
+function MobileNavLink({ href, children, className = "", onClick }: { href: string; children: React.ReactNode; className?: string; onClick?: () => void }) {
   return (
     <Link 
       href={href} 
+      onClick={onClick}
       className={`block px-4 py-3 rounded-2xl hover:bg-primary/5 text-text-primary font-medium transition-colors ${className}`}
     >
       {children}

@@ -36,33 +36,70 @@ const ArtisticFlower = ({ className }: { className?: string }) => (
   </svg>
 );
 
+const ArtisticRoot = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="currentColor" className={className}>
+    <g fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+      <path d="M40,30 C30,50 35,70 50,85 C65,70 70,50 60,30 C55,20 45,20 40,30 Z" />
+      <path d="M50,85 Q45,95 40,95 M50,85 Q55,95 60,95 M42,60 Q30,65 25,75 M58,60 Q70,65 75,75 M46,45 Q35,45 30,50 M54,45 Q65,45 70,50" strokeWidth="1.5" />
+      <path d="M45,30 Q50,20 50,15 M55,30 Q50,20 50,15" />
+    </g>
+  </svg>
+);
+
+const ArtisticStaples = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="currentColor" className={className}>
+    <g fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M50,90 L50,15" />
+      <path d="M50,75 Q35,65 30,50 M50,65 Q65,55 70,40 M50,50 Q35,40 30,25 M50,40 Q65,30 70,15" strokeWidth="2" />
+      <path d="M30,50 Q40,55 50,70 M70,40 Q60,45 50,60 M30,25 Q40,30 50,45 M70,15 Q60,20 50,35" strokeWidth="2" />
+      <circle cx="50" cy="10" r="3" fill="currentColor" />
+    </g>
+  </svg>
+);
+
 export default function ProductCategories() {
   const [flippedId, setFlippedId] = useState<string | null>(null);
 
   const categories = [
     {
       id: "vegetables",
-      title: "Vegetables",
+      title: "VEGETABLES",
       image: "/vegetables.png",
       color: "primary",
       icon: <ArtisticVegetable className="w-12 h-12 text-primary" />,
       description: "Organic vegetables harvested from high-altitude farms, 100% pesticide-free and packed with nutrients."
     },
     {
-      id: "fruits",
-      title: "Fruits",
-      image: "/fruits.png",
+      id: "medicinal-herbs",
+      title: "HERBS, FRUITS & NUTS",
+      image: "/fruits.png", // Temporarily using fruits image
       color: "secondary",
       icon: <ArtisticFruit className="w-12 h-12 text-secondary" />,
-      description: "Naturally ripened, hand-picked fruits from the Himalayan foothills, delivered fresh to your table."
+      description: "Naturally ripened, hand-picked fruits, nuts, and medicinal herbs from the Himalayan foothills."
     },
     {
-      id: "flowers",
-      title: "Flowers",
+      id: "flowers-leaves",
+      title: "FLOWERS & LEAVES",
       image: "/flowers.png",
       color: "accent",
       icon: <ArtisticFlower className="w-12 h-12 text-accent" />,
-      description: "Vibrant and long-lasting exotic flowers, carefully packed for international export and special occasions."
+      description: "Vibrant and long-lasting exotic flowers and aromatic leaves, carefully packed for international export."
+    },
+    {
+      id: "roots-rhizomes",
+      title: "ROOTS & RHIZOMES",
+      image: null, // Loading state will show
+      color: "primary",
+      icon: <ArtisticRoot className="w-12 h-12 text-primary" />,
+      description: "Premium quality roots and rhizomes, naturally dried and preserved for maximum efficacy."
+    },
+    {
+      id: "staples-commodities",
+      title: "STAPLES & COMMODITIES",
+      image: null,
+      color: "secondary",
+      icon: <ArtisticStaples className="w-12 h-12 text-secondary" />,
+      description: "Essential staple crops and high-quality agricultural commodities sourced directly from local farmers."
     }
   ];
 
@@ -80,27 +117,35 @@ export default function ProductCategories() {
                <span className="text-secondary italic font-serif">Essentials</span>.
             </h2>
           </div>
-          <p className="text-xl text-text-secondary font-medium max-w-sm lg:text-right opacity-70">
-             Handpicked from High-Altitude Nepal. Click a card to explore details.
-          </p>
+          <div className="flex flex-col lg:items-end gap-3 max-w-sm mt-4 lg:mt-0">
+            <p className="text-xl text-text-secondary font-medium lg:text-right opacity-70">
+               Handpicked from High-Altitude Nepal.
+            </p>
+            <div className="inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full shadow-lg shadow-primary/30 animate-pulse">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 2.15l-1.037 2.812m8.056 4.965l-2.812-1.036"/>
+              </svg>
+              <span className="text-sm font-bold uppercase tracking-wider">Click a card to explore details</span>
+            </div>
+          </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14 justify-center">
           {categories.map((cat) => (
             <div 
               key={cat.id} 
               id={cat.id} 
-              className="group relative cursor-pointer perspective-1000"
+              className="group relative cursor-pointer perspective-1000 w-full max-w-lg mx-auto"
               onClick={() => setFlippedId(flippedId === cat.id ? null : cat.id)}
             >
                {/* 3D Flipper Container */}
-               <div className={`relative aspect-[4/5] w-full transition-all duration-700 preserve-3d rounded-[3.5rem] ${flippedId === cat.id ? "rotate-y-180" : ""}`}>
+               <div className={`relative aspect-[4/5] w-full transition-all duration-[800ms] preserve-3d rounded-[4rem] group-hover:scale-[1.02] ${flippedId === cat.id ? "rotate-y-180" : ""}`}>
                   
                   {/* FRONT SIDE */}
-                  <div className="absolute inset-0 backface-hidden rounded-[3.5rem] overflow-hidden bg-white border border-white/50 shadow-soft">
-                     {/* Image with zoom effect */}
+                  <div className="absolute inset-0 backface-hidden rounded-[4rem] overflow-hidden bg-white border border-white/50 shadow-2xl group-hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.3)] transition-shadow duration-[800ms]">
+                      {/* Image with zoom effect */}
                      <div className="absolute inset-0">
-                        {cat.image && (cat.id === 'vegetables') ? (
+                        {cat.image ? (
                           <Image 
                             src={cat.image} 
                             alt={cat.title} 
@@ -116,8 +161,8 @@ export default function ProductCategories() {
                      </div>
 
                      {/* Title & Agro SVG */}
-                     <div className="absolute inset-x-0 bottom-0 p-10">
-                        <h3 className="text-5xl font-heading font-black text-white drop-shadow-2xl">
+                     <div className="absolute inset-x-0 bottom-0 p-8 lg:p-10">
+                        <h3 className="text-3xl lg:text-4xl font-heading font-black text-white drop-shadow-2xl">
                            {cat.title}
                         </h3>
                      </div>
@@ -130,7 +175,7 @@ export default function ProductCategories() {
                   </div>
 
                   {/* BACK SIDE */}
-                  <div className="absolute inset-0 backface-hidden rotate-y-180 rounded-[3.5rem] overflow-hidden bg-white border-4 border-primary/5 shadow-2xl p-12 flex flex-col justify-between items-center text-center">
+                  <div className="absolute inset-0 backface-hidden rotate-y-180 rounded-[4rem] overflow-hidden bg-white border-4 border-primary/5 shadow-2xl group-hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.3)] transition-shadow duration-[800ms] p-12 flex flex-col justify-between items-center text-center">
                      <div className="w-20 h-20 bg-bg-section rounded-full flex items-center justify-center shadow-inner">
                         {cat.icon}
                      </div>
@@ -144,8 +189,8 @@ export default function ProductCategories() {
                      </div>
 
                      <div className="w-full">
-                        <UniversalButton href={`#${cat.id}`} className="w-full">
-                           Explore {cat.title}
+                        <UniversalButton href={`/products/${cat.id}`} className="w-full">
+                           Explore
                         </UniversalButton>
                      </div>
                   </div>

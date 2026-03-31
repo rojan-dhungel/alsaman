@@ -1,0 +1,1578 @@
+[
+ {
+  "S. No.": "VEGETABLES (VG)"
+ },
+ {
+  "S. No.": 1,
+  "LIST OF ITEMS": "Green Beans",
+  "__EMPTY": "घ्यू सिमी",
+  "__EMPTY_1": "Phaseolus vulgaris",
+  "CODE": "VG-0001"
+ },
+ {
+  "S. No.": 2,
+  "LIST OF ITEMS": "Kidney Beans",
+  "__EMPTY": "राजमा",
+  "__EMPTY_1": "Phaseolus vulgaris",
+  "CODE": "VG-0002"
+ },
+ {
+  "S. No.": 3,
+  "LIST OF ITEMS": "String/French Beans",
+  "__EMPTY": "सिमी",
+  "__EMPTY_1": "Phaseolus vulgaris",
+  "CODE": "VG-0003"
+ },
+ {
+  "S. No.": 4,
+  "LIST OF ITEMS": "Flat Beans",
+  "__EMPTY": "चेप्टो सिमी",
+  "__EMPTY_1": "Phaseolus vulgaris",
+  "CODE": "VG-0004"
+ },
+ {
+  "S. No.": 5,
+  "LIST OF ITEMS": "Yardlong Beans",
+  "__EMPTY": "तने बोडी",
+  "__EMPTY_1": "Vigna unguiculata sesquipedalis",
+  "CODE": "VG-0005"
+ },
+ {
+  "S. No.": 6,
+  "LIST OF ITEMS": "Black-eyed Peas",
+  "__EMPTY": "बोडी",
+  "__EMPTY_1": "Vigna unguiculata unguiculata",
+  "CODE": "VG-0006"
+ },
+ {
+  "S. No.": 7,
+  "LIST OF ITEMS": "Windsor/Broad Beans",
+  "__EMPTY": "बकुल्ला",
+  "__EMPTY_1": "Vicia faba",
+  "CODE": "VG-0007"
+ },
+ {
+  "S. No.": 8,
+  "LIST OF ITEMS": "Peas",
+  "__EMPTY": "मटर",
+  "__EMPTY_1": "Pisum sativum",
+  "CODE": "VG-0008"
+ },
+ {
+  "S. No.": 9,
+  "LIST OF ITEMS": "Fiddlehead Fern",
+  "__EMPTY": "निगुरो",
+  "__EMPTY_1": "Diplazium esculentum",
+  "CODE": "VG-0009"
+ },
+ {
+  "S. No.": 10,
+  "LIST OF ITEMS": "Bullet Chilli",
+  "__EMPTY": "बुलेट खुर्सानी",
+  "__EMPTY_1": "Capsicum annuum",
+  "CODE": "VG-0010"
+ },
+ {
+  "S. No.": 11,
+  "LIST OF ITEMS": "Green Chilli",
+  "__EMPTY": "हरियो खुर्सानी",
+  "__EMPTY_1": "Capsicum annuum",
+  "CODE": "VG-0011"
+ },
+ {
+  "S. No.": 12,
+  "LIST OF ITEMS": "Red Chilli",
+  "__EMPTY": "रातो खुर्सानी",
+  "__EMPTY_1": "Capsicum annuum",
+  "CODE": "VG-0012"
+ },
+ {
+  "S. No.": 13,
+  "LIST OF ITEMS": "Red Ball Chilli",
+  "__EMPTY": "डल्ले/अकबरे खुर्सानी",
+  "__EMPTY_1": "Capsicum annuum",
+  "CODE": "VG-0013"
+ },
+ {
+  "S. No.": 14,
+  "LIST OF ITEMS": "Capsicum",
+  "__EMPTY": "भेँडे खुर्सानी",
+  "__EMPTY_1": "Capsicum annuum",
+  "CODE": "VG-0014"
+ },
+ {
+  "S. No.": 15,
+  "LIST OF ITEMS": "Potato (White)",
+  "__EMPTY": "आलु (सेतो)",
+  "__EMPTY_1": "Solanum tuberosum",
+  "CODE": "VG-0015"
+ },
+ {
+  "S. No.": 16,
+  "LIST OF ITEMS": "Potato (Red)",
+  "__EMPTY": "आलु (रातो)",
+  "__EMPTY_1": "Solanum tuberosum",
+  "CODE": "VG-0016"
+ },
+ {
+  "S. No.": 17,
+  "LIST OF ITEMS": "Aubergine/Eggplant (Long)",
+  "__EMPTY": "भण्टा (लामो)",
+  "__EMPTY_1": "Solanum melongena",
+  "CODE": "VG-0017"
+ },
+ {
+  "S. No.": 18,
+  "LIST OF ITEMS": "Aubergine/Eggplant (Round)",
+  "__EMPTY": "भण्टा (गोलो)",
+  "__EMPTY_1": "Solanum melongena",
+  "CODE": "VG-0018"
+ },
+ {
+  "S. No.": 19,
+  "LIST OF ITEMS": "Tomato (Kabita)",
+  "__EMPTY": "गोलभेँडा/टमाटर (कबिता)",
+  "__EMPTY_1": "Solanum lycopersicum",
+  "CODE": "VG-0019"
+ },
+ {
+  "S. No.": 20,
+  "LIST OF ITEMS": "Tomato (Salad)",
+  "__EMPTY": "गोलभेँडा/टमाटर (सलाद)",
+  "__EMPTY_1": "Solanum lycopersicum",
+  "CODE": "VG-0020"
+ },
+ {
+  "S. No.": 21,
+  "LIST OF ITEMS": "Green Coriander",
+  "__EMPTY": "धनियाँ",
+  "__EMPTY_1": "Coriandrum sativum",
+  "CODE": "VG-0021"
+ },
+ {
+  "S. No.": 22,
+  "LIST OF ITEMS": "Mustard Greens",
+  "__EMPTY": "रायोको साग",
+  "__EMPTY_1": "Brassica juncea",
+  "CODE": "VG-0022"
+ },
+ {
+  "S. No.": 23,
+  "LIST OF ITEMS": "Spinach",
+  "__EMPTY": "पालुङ्गो",
+  "__EMPTY_1": "Spinacia oleracea",
+  "CODE": "VG-0023"
+ },
+ {
+  "S. No.": 24,
+  "LIST OF ITEMS": "Lettuce",
+  "__EMPTY": "लेटस/सलाद साग",
+  "__EMPTY_1": "Lactuca sativa",
+  "CODE": "VG-0024"
+ },
+ {
+  "S. No.": 25,
+  "LIST OF ITEMS": "Fenugreek Leaves",
+  "__EMPTY": "मेथीको साग",
+  "__EMPTY_1": "Trigonella foenum-graecum",
+  "CODE": "VG-0025"
+ },
+ {
+  "S. No.": 26,
+  "LIST OF ITEMS": "Garden Cress",
+  "__EMPTY": "चम्सुर",
+  "__EMPTY_1": "Lepidium sativum",
+  "CODE": "VG-0026"
+ },
+ {
+  "S. No.": 27,
+  "LIST OF ITEMS": "Green Onion",
+  "__EMPTY": "हरियो प्याज",
+  "__EMPTY_1": "Allium cepa",
+  "CODE": "VG-0027"
+ },
+ {
+  "S. No.": 28,
+  "LIST OF ITEMS": "Onion",
+  "__EMPTY": "प्याज",
+  "__EMPTY_1": "Allium cepa",
+  "CODE": "VG-0028"
+ },
+ {
+  "S. No.": 29,
+  "LIST OF ITEMS": "Garlic (Local)",
+  "__EMPTY": "लसुन (लोकल)",
+  "__EMPTY_1": "Allium sativum",
+  "CODE": "VG-0029"
+ },
+ {
+  "S. No.": 30,
+  "LIST OF ITEMS": "Garlic (Chinese)",
+  "__EMPTY": "लसुन (चिनियाँ)",
+  "__EMPTY_1": "Allium sativum",
+  "CODE": "VG-0030"
+ },
+ {
+  "S. No.": 31,
+  "LIST OF ITEMS": "Ginger",
+  "__EMPTY": "अदुवा",
+  "__EMPTY_1": "Zingiber officinale",
+  "CODE": "VG-0031"
+ },
+ {
+  "S. No.": 32,
+  "LIST OF ITEMS": "Leek",
+  "__EMPTY": "लीक",
+  "__EMPTY_1": "Allium ampeloprasum",
+  "CODE": "VG-0032"
+ },
+ {
+  "S. No.": 33,
+  "LIST OF ITEMS": "Pumpkin",
+  "__EMPTY": "पाकेको फर्सी",
+  "__EMPTY_1": "Cucurbita maxima",
+  "CODE": "VG-0033"
+ },
+ {
+  "S. No.": 34,
+  "LIST OF ITEMS": "Zucchini (Grey)",
+  "__EMPTY": "जुकिनी/लामो फर्सी",
+  "__EMPTY_1": "Cucurbita pepo",
+  "CODE": "VG-0034"
+ },
+ {
+  "S. No.": 35,
+  "LIST OF ITEMS": "Zucchini (Ronde de Nice)",
+  "__EMPTY": "हरियो फर्सी",
+  "__EMPTY_1": "Cucurbita pepo",
+  "CODE": "VG-0035"
+ },
+ {
+  "S. No.": 36,
+  "LIST OF ITEMS": "Pointed Gourd",
+  "__EMPTY": "परवर",
+  "__EMPTY_1": "Trichosanthes dioica",
+  "CODE": "VG-0036"
+ },
+ {
+  "S. No.": 37,
+  "LIST OF ITEMS": "Sponge Gourd",
+  "__EMPTY": "घिरौँला",
+  "__EMPTY_1": "Luffa aegyptiaca",
+  "CODE": "VG-0037"
+ },
+ {
+  "S. No.": 38,
+  "LIST OF ITEMS": "Bottle Gourd",
+  "__EMPTY": "लौका",
+  "__EMPTY_1": "Lagenaria siceraria",
+  "CODE": "VG-0038"
+ },
+ {
+  "S. No.": 39,
+  "LIST OF ITEMS": "Bitter Gourd (Small)",
+  "__EMPTY": "करेला (सानो)",
+  "__EMPTY_1": "Momordica charantia",
+  "CODE": "VG-0039"
+ },
+ {
+  "S. No.": 40,
+  "LIST OF ITEMS": "Bitter Gourd (Large)",
+  "__EMPTY": "करेला (ठूलो)",
+  "__EMPTY_1": "Momordica charantia",
+  "CODE": "VG-0040"
+ },
+ {
+  "S. No.": 41,
+  "LIST OF ITEMS": "Snake Gourd",
+  "__EMPTY": "चिचिण्डो",
+  "__EMPTY_1": "Trichosanthes cucumerina",
+  "CODE": "VG-0041"
+ },
+ {
+  "S. No.": 42,
+  "LIST OF ITEMS": "Balsam Apple",
+  "__EMPTY": "बरेला",
+  "__EMPTY_1": "Momordica balsamina",
+  "CODE": "VG-0042"
+ },
+ {
+  "S. No.": 43,
+  "LIST OF ITEMS": "Chayote Squash",
+  "__EMPTY": "इस्कुश",
+  "__EMPTY_1": "Sechium edule",
+  "CODE": "VG-0043"
+ },
+ {
+  "S. No.": 44,
+  "LIST OF ITEMS": "Chayote Squash (Local)",
+  "__EMPTY": "इस्कुश (लोकल)",
+  "__EMPTY_1": "Sechium edule",
+  "CODE": "VG-0044"
+ },
+ {
+  "S. No.": 45,
+  "LIST OF ITEMS": "Cucumber",
+  "__EMPTY": "काँक्रो",
+  "__EMPTY_1": "Cucumis sativus",
+  "CODE": "VG-0045"
+ },
+ {
+  "S. No.": 46,
+  "LIST OF ITEMS": "Cucumber (Local)",
+  "__EMPTY": "काँक्रो (लोकल)",
+  "__EMPTY_1": "Cucumis sativus",
+  "CODE": "VG-0046"
+ },
+ {
+  "S. No.": 47,
+  "LIST OF ITEMS": "Carrot",
+  "__EMPTY": "गाजर",
+  "__EMPTY_1": "Daucus carota",
+  "CODE": "VG-0047"
+ },
+ {
+  "S. No.": 48,
+  "LIST OF ITEMS": "Radish (Red)",
+  "__EMPTY": "रातो मुला",
+  "__EMPTY_1": "Raphanus sativus",
+  "CODE": "VG-0048"
+ },
+ {
+  "S. No.": 49,
+  "LIST OF ITEMS": "Radish (White)",
+  "__EMPTY": "सेतो मुला",
+  "__EMPTY_1": "Raphanus sativus",
+  "CODE": "VG-0049"
+ },
+ {
+  "S. No.": 50,
+  "LIST OF ITEMS": "Beetroot",
+  "__EMPTY": "चुकन्दर",
+  "__EMPTY_1": "Beta vulgaris",
+  "CODE": "VG-0050"
+ },
+ {
+  "S. No.": 51,
+  "LIST OF ITEMS": "Yam",
+  "__EMPTY": "तरुल",
+  "__EMPTY_1": "Dioscorea alata",
+  "CODE": "VG-0051"
+ },
+ {
+  "S. No.": 52,
+  "LIST OF ITEMS": "Taro Root",
+  "__EMPTY": "पिँडालु",
+  "__EMPTY_1": "Colocasia esculenta",
+  "CODE": "VG-0052"
+ },
+ {
+  "S. No.": 53,
+  "LIST OF ITEMS": "Bamboo Shoot (Whole)",
+  "__EMPTY": "तामा टुसा",
+  "__EMPTY_1": "Bambusa vulgaris",
+  "CODE": "VG-0053"
+ },
+ {
+  "S. No.": 54,
+  "LIST OF ITEMS": "Bamboo Shoot (Fermented)",
+  "__EMPTY": "तामा",
+  "__EMPTY_1": "Bambusa vulgaris",
+  "CODE": "VG-0054"
+ },
+ {
+  "S. No.": 55,
+  "LIST OF ITEMS": "Fresh Corn",
+  "__EMPTY": "हरियो मकै",
+  "__EMPTY_1": "Zea mays",
+  "CODE": "VG-0055"
+ },
+ {
+  "S. No.": 56,
+  "LIST OF ITEMS": "Sweet Potato",
+  "__EMPTY": "सखरखण्ड/शकरकन्द",
+  "__EMPTY_1": "Ipomoea batatas",
+  "CODE": "VG-0056"
+ },
+ {
+  "S. No.": 57,
+  "LIST OF ITEMS": "Mushroom (Shiitake)",
+  "__EMPTY": "च्याउ (शीताके)",
+  "__EMPTY_1": "Lentinula edodes",
+  "CODE": "VG-0057"
+ },
+ {
+  "S. No.": 58,
+  "LIST OF ITEMS": "Mushroom (Button)",
+  "__EMPTY": "च्याउ (डल्ले)",
+  "__EMPTY_1": "Agaricus bisporus",
+  "CODE": "VG-0058"
+ },
+ {
+  "S. No.": 59,
+  "LIST OF ITEMS": "Mushroom (Black Oyster)",
+  "__EMPTY": "च्याउ (कालो कन्ये/पाते)",
+  "__EMPTY_1": "Pleurotus ostreatus",
+  "CODE": "VG-0059"
+ },
+ {
+  "S. No.": 60,
+  "LIST OF ITEMS": "Mushroom (White Oyster)",
+  "__EMPTY": "च्याउ (सेतो कन्ये/पाते)",
+  "__EMPTY_1": "Pleurotus ostreatus",
+  "CODE": "VG-0060"
+ },
+ {
+  "S. No.": 61,
+  "LIST OF ITEMS": "Mushroom (King Oyster)",
+  "__EMPTY": "च्याउ (राजा)",
+  "__EMPTY_1": "Pleurotus eryngii",
+  "CODE": "VG-0061"
+ },
+ {
+  "S. No.": 62,
+  "LIST OF ITEMS": "Okra/Lady Fingers",
+  "__EMPTY": "भिण्डी/रामतोरियाँ",
+  "__EMPTY_1": "Abelmoschus esculentus",
+  "CODE": "VG-0062"
+ },
+ {
+  "S. No.": 63,
+  "LIST OF ITEMS": "Lime",
+  "__EMPTY": "कागती",
+  "__EMPTY_1": "Citrus aurantifolia",
+  "CODE": "VG-0063"
+ },
+ {
+  "S. No.": 64,
+  "LIST OF ITEMS": "Kohlrabi",
+  "__EMPTY": "गाँठ गोबी",
+  "__EMPTY_1": "Brassica oleracea gongylodes",
+  "CODE": "VG-0064"
+ },
+ {
+  "S. No.": 65,
+  "LIST OF ITEMS": "Cauliflower",
+  "__EMPTY": "काउली",
+  "__EMPTY_1": "Brassica oleracea botrytis",
+  "CODE": "VG-0065"
+ },
+ {
+  "S. No.": 66,
+  "LIST OF ITEMS": "Cabbage",
+  "__EMPTY": "बन्दा गोबी",
+  "__EMPTY_1": "Brassica oleracea capitata",
+  "CODE": "VG-0066"
+ },
+ {
+  "S. No.": "MEDICINAL HERBS, FRUITS & NUTS (MH)"
+ },
+ {
+  "S. No.": 67,
+  "LIST OF ITEMS": "Eucalyptus",
+  "__EMPTY": "नीलगिरी",
+  "__EMPTY_1": "Eucalyptus globulus",
+  "CODE": "MH-0001"
+ },
+ {
+  "S. No.": 68,
+  "LIST OF ITEMS": "Heart-leaved Moonseed",
+  "__EMPTY": "गुर्जो",
+  "__EMPTY_1": "Tinospora cordifolia",
+  "CODE": "MH-0002"
+ },
+ {
+  "S. No.": 69,
+  "LIST OF ITEMS": "Himalayan Paris",
+  "__EMPTY": "सतुवा",
+  "__EMPTY_1": "Paris polyphylla",
+  "CODE": "MH-0003"
+ },
+ {
+  "S. No.": 70,
+  "LIST OF ITEMS": "Chiretta/Chirayata",
+  "__EMPTY": "चिराइतो",
+  "__EMPTY_1": "Swertia chirayita",
+  "CODE": "MH-0004"
+ },
+ {
+  "S. No.": 71,
+  "LIST OF ITEMS": "Himalayan Picrorhiza",
+  "__EMPTY": "कुट्की/कटुको",
+  "__EMPTY_1": "Picrorhiza scrophulariiflora",
+  "CODE": "MH-0005"
+ },
+ {
+  "S. No.": 72,
+  "LIST OF ITEMS": "Dendrobium",
+  "__EMPTY": "सुनाखरी/जीवन्ती",
+  "__EMPTY_1": "Dendrobium spp.",
+  "CODE": "MH-0006"
+ },
+ {
+  "S. No.": 73,
+  "LIST OF ITEMS": "Reishi Mushroom",
+  "__EMPTY": "रिसी/गानो/रातो च्याउ",
+  "__EMPTY_1": "Ganoderma lucidum",
+  "CODE": "MH-0007"
+ },
+ {
+  "S. No.": 74,
+  "LIST OF ITEMS": "Poria Mushroom",
+  "__EMPTY": "पोरिया च्याउ/फु लिङ",
+  "__EMPTY_1": "Poria cocos",
+  "CODE": "MH-0008"
+ },
+ {
+  "S. No.": 75,
+  "LIST OF ITEMS": "Phellinus Mushroom",
+  "__EMPTY": "फेलिनस च्याउ",
+  "__EMPTY_1": "Phellinus lonicerinus",
+  "CODE": "MH-0009"
+ },
+ {
+  "S. No.": 76,
+  "LIST OF ITEMS": "Chaga Mushroom",
+  "__EMPTY": "चागा च्याउ",
+  "__EMPTY_1": "Inonotus obliquus",
+  "CODE": "MH-0010"
+ },
+ {
+  "S. No.": 77,
+  "LIST OF ITEMS": "Ginseng",
+  "__EMPTY": "जिन्सेङ",
+  "__EMPTY_1": "Panax ginseng",
+  "CODE": "MH-0011"
+ },
+ {
+  "S. No.": 78,
+  "LIST OF ITEMS": "American Ginseng",
+  "__EMPTY": "अमेरिकन जिन्सेङ",
+  "__EMPTY_1": "Panax quinquefolius",
+  "CODE": "MH-0012"
+ },
+ {
+  "S. No.": 79,
+  "LIST OF ITEMS": "Nepali Ginseng",
+  "__EMPTY": "नेपाली जिनसेङ",
+  "__EMPTY_1": "Panax pseudoginseng",
+  "CODE": "MH-0013"
+ },
+ {
+  "S. No.": 80,
+  "LIST OF ITEMS": "Red Ginseng (Steamed)",
+  "__EMPTY": "रातो जिन्सेङ (बफाएको)",
+  "__EMPTY_1": "Panax ginseng",
+  "CODE": "MH-0014"
+ },
+ {
+  "S. No.": 81,
+  "LIST OF ITEMS": "Cordyceps/Caterpillar Fungus",
+  "__EMPTY": "यार्सागुम्बा",
+  "__EMPTY_1": "Ophiocordyceps sinensis",
+  "CODE": "MH-0015"
+ },
+ {
+  "S. No.": 82,
+  "LIST OF ITEMS": "Saffron",
+  "__EMPTY": "केसर",
+  "__EMPTY_1": "Crocus sativus",
+  "CODE": "MH-0016"
+ },
+ {
+  "S. No.": 83,
+  "LIST OF ITEMS": "Safflower",
+  "__EMPTY": "कुसुम",
+  "__EMPTY_1": "Carthamus tinctorius",
+  "CODE": "MH-0017"
+ },
+ {
+  "S. No.": 84,
+  "LIST OF ITEMS": "Licorice/Liquorice",
+  "__EMPTY": "जेठीमधु",
+  "__EMPTY_1": "Glycyrrhiza uralensis",
+  "CODE": "MH-0018"
+ },
+ {
+  "S. No.": 85,
+  "LIST OF ITEMS": "Angelica",
+  "__EMPTY": "चिनियाँ एञ्जेलिका",
+  "__EMPTY_1": "Angelica sinensis",
+  "CODE": "MH-0019"
+ },
+ {
+  "S. No.": 86,
+  "LIST OF ITEMS": "Nepali Angelica",
+  "__EMPTY": "चोरक/भूतकेश",
+  "__EMPTY_1": "Angelica glauca",
+  "CODE": "MH-0020"
+ },
+ {
+  "S. No.": 87,
+  "LIST OF ITEMS": "Astragalus",
+  "__EMPTY": "अस्ट्रागालस",
+  "__EMPTY_1": "Astragalus membranaceus",
+  "CODE": "MH-0021"
+ },
+ {
+  "S. No.": 88,
+  "LIST OF ITEMS": "Rhubarb",
+  "__EMPTY": "पदमचाल",
+  "__EMPTY_1": "Rheum palmatum",
+  "CODE": "MH-0022"
+ },
+ {
+  "S. No.": 89,
+  "LIST OF ITEMS": "Gastrodia",
+  "__EMPTY": "गास्ट्रोडिया",
+  "__EMPTY_1": "Gastrodia elata",
+  "CODE": "MH-0023"
+ },
+ {
+  "S. No.": 90,
+  "LIST OF ITEMS": "Asafoetida",
+  "__EMPTY": "हिङ्ग",
+  "__EMPTY_1": "Ferula asafoetida",
+  "CODE": "MH-0024"
+ },
+ {
+  "S. No.": 91,
+  "LIST OF ITEMS": "Myrrh",
+  "__EMPTY": "बोल",
+  "__EMPTY_1": "Commiphora myrrha",
+  "CODE": "MH-0025"
+ },
+ {
+  "S. No.": 92,
+  "LIST OF ITEMS": "Frankincense",
+  "__EMPTY": "धूप",
+  "__EMPTY_1": "Boswellia carterii",
+  "CODE": "MH-0026"
+ },
+ {
+  "S. No.": 93,
+  "LIST OF ITEMS": "Dragon's Blood",
+  "__EMPTY": "रक्तनिर्यास/ड्र्यागन्स् ब्लड",
+  "__EMPTY_1": "Daemonorops draco",
+  "CODE": "MH-0027"
+ },
+ {
+  "S. No.": 94,
+  "LIST OF ITEMS": "Sandalwood",
+  "__EMPTY": "श्रीखण्ड/चन्दन",
+  "__EMPTY_1": "Santalum album",
+  "CODE": "MH-0028"
+ },
+ {
+  "S. No.": 95,
+  "LIST OF ITEMS": "Agarwood",
+  "__EMPTY": "अगर/सुगन्धी",
+  "__EMPTY_1": "Aquilaria sinensis",
+  "CODE": "MH-0029"
+ },
+ {
+  "S. No.": 96,
+  "LIST OF ITEMS": "Indian Gooseberry",
+  "__EMPTY": "अमला",
+  "__EMPTY_1": "Phyllanthus emblica",
+  "CODE": "MH-0030"
+ },
+ {
+  "S. No.": 97,
+  "LIST OF ITEMS": "Chebulic Myrobalan",
+  "__EMPTY": "हर्रो",
+  "__EMPTY_1": "Terminalia chebula",
+  "CODE": "MH-0031"
+ },
+ {
+  "S. No.": 98,
+  "LIST OF ITEMS": "Chebulic Myrobalan (Immature)",
+  "__EMPTY": "हर्रो (काँचो)",
+  "__EMPTY_1": "Terminalia chebula",
+  "CODE": "MH-0032"
+ },
+ {
+  "S. No.": 99,
+  "LIST OF ITEMS": "Belleric Myrobalan",
+  "__EMPTY": "बर्रो",
+  "__EMPTY_1": "Terminalia bellirica",
+  "CODE": "MH-0033"
+ },
+ {
+  "S. No.": 100,
+  "LIST OF ITEMS": "Jujube/Red Date",
+  "__EMPTY": "चिनियाँ बयर",
+  "__EMPTY_1": "Ziziphus jujuba",
+  "CODE": "MH-0034"
+ },
+ {
+  "S. No.": 101,
+  "LIST OF ITEMS": "Ginkgo Nut",
+  "__EMPTY": "जिङ्को/बालकुमारी",
+  "__EMPTY_1": "Ginkgo biloba",
+  "CODE": "MH-0036"
+ },
+ {
+  "S. No.": 102,
+  "LIST OF ITEMS": "Ginkgo Leaves",
+  "__EMPTY": "जिङ्को/बालकुमारीको पात",
+  "__EMPTY_1": "Ginkgo biloba",
+  "CODE": "MH-0037"
+ },
+ {
+  "S. No.": 103,
+  "LIST OF ITEMS": "Longan/Dragon's Eye",
+  "__EMPTY": "लोङ्गन/ड्र्यागन्स् आई",
+  "__EMPTY_1": "Dimocarpus longan",
+  "CODE": "MH-0038"
+ },
+ {
+  "S. No.": 104,
+  "LIST OF ITEMS": "Apricot Kernel",
+  "__EMPTY": "खुर्पानीको बिऊ",
+  "__EMPTY_1": "Prunus armeniaca",
+  "CODE": "MH-0039"
+ },
+ {
+  "S. No.": 105,
+  "LIST OF ITEMS": "Areca/Betel Nut",
+  "__EMPTY": "सुपारी",
+  "__EMPTY_1": "Areca catechu",
+  "CODE": "MH-0040"
+ },
+ {
+  "S. No.": 106,
+  "LIST OF ITEMS": "Areca/Betel Nut Peel",
+  "__EMPTY": "सुपारीको खोस्टा",
+  "__EMPTY_1": "Areca catechu",
+  "CODE": "MH-0041"
+ },
+ {
+  "S. No.": 107,
+  "LIST OF ITEMS": "Monk Fruit",
+  "__EMPTY": "मङ्क फ्रुट",
+  "__EMPTY_1": "Siraitia grosvenorii",
+  "CODE": "MH-0042"
+ },
+ {
+  "S. No.": 108,
+  "LIST OF ITEMS": "Malva Nut",
+  "__EMPTY": "निरञ्जन फल",
+  "__EMPTY_1": "Sterculia lychnophora",
+  "CODE": "MH-0043"
+ },
+ {
+  "S. No.": 109,
+  "LIST OF ITEMS": "Goji/Wolf Berry",
+  "__EMPTY": "गोजी",
+  "__EMPTY_1": "Lycium barbarum",
+  "CODE": "MH-0044"
+ },
+ {
+  "S. No.": 110,
+  "LIST OF ITEMS": "Raspberry",
+  "__EMPTY": "ऐँसेलु",
+  "__EMPTY_1": "Rubus chingii",
+  "CODE": "MH-0045"
+ },
+ {
+  "S. No.": 111,
+  "LIST OF ITEMS": "Cornus Fruit",
+  "__EMPTY": "कोर्नस",
+  "__EMPTY_1": "Cornus officinalis",
+  "CODE": "MH-0046"
+ },
+ {
+  "S. No.": 112,
+  "LIST OF ITEMS": "Milk Thistle",
+  "__EMPTY": "दूधपत्र",
+  "__EMPTY_1": "Silybum marianum",
+  "CODE": "MH-0047"
+ },
+ {
+  "S. No.": 113,
+  "LIST OF ITEMS": "Coix Seed/Job's Tears",
+  "__EMPTY": "भिरकौलो/भिरौले",
+  "__EMPTY_1": "Coix lacryma-jobi",
+  "CODE": "MH-0048"
+ },
+ {
+  "S. No.": "FLOWERS & LEAVES (FL)"
+ },
+ {
+  "S. No.": 114,
+  "LIST OF ITEMS": "Chrysanthemum",
+  "__EMPTY": "गोदावरी",
+  "__EMPTY_1": "Chrysanthemum morifolium",
+  "CODE": "FL-0001"
+ },
+ {
+  "S. No.": 115,
+  "LIST OF ITEMS": "Honeysuckle",
+  "__EMPTY": "जुही",
+  "__EMPTY_1": "Lonicera japonica",
+  "CODE": "FL-0002"
+ },
+ {
+  "S. No.": 116,
+  "LIST OF ITEMS": "Sophora Flower",
+  "__EMPTY": "सोफोरा",
+  "__EMPTY_1": "Sophora japonica",
+  "CODE": "FL-0003"
+ },
+ {
+  "S. No.": 117,
+  "LIST OF ITEMS": "Rose Bud",
+  "__EMPTY": "गुलाफ",
+  "__EMPTY_1": "Rosa rugosa",
+  "CODE": "FL-0004"
+ },
+ {
+  "S. No.": 118,
+  "LIST OF ITEMS": "Senna Leaf",
+  "__EMPTY": "सेनाको पात",
+  "__EMPTY_1": "Cassia angustifolia",
+  "CODE": "FL-0005"
+ },
+ {
+  "S. No.": 119,
+  "LIST OF ITEMS": "Mint",
+  "__EMPTY": "पुदिना",
+  "__EMPTY_1": "Mentha haplocalyx",
+  "CODE": "FL-0006"
+ },
+ {
+  "S. No.": 120,
+  "LIST OF ITEMS": "Perilla Leaf",
+  "__EMPTY": "सिलामको पात",
+  "__EMPTY_1": "Perilla frutescens",
+  "CODE": "FL-0007"
+ },
+ {
+  "S. No.": 121,
+  "LIST OF ITEMS": "Sweet Wormwood",
+  "__EMPTY": "तितेपाती",
+  "__EMPTY_1": "Artemisia annua",
+  "CODE": "FL-0008"
+ },
+ {
+  "S. No.": 122,
+  "LIST OF ITEMS": "Dandelion",
+  "__EMPTY": "टुकी/डाण्डेलियोन",
+  "__EMPTY_1": "Taraxacum mongolicum",
+  "CODE": "FL-0009"
+ },
+ {
+  "S. No.": 123,
+  "LIST OF ITEMS": "Aloe Vera",
+  "__EMPTY": "घ्यूकुमारी",
+  "__EMPTY_1": "Aloe barbadensis",
+  "CODE": "FL-0010"
+ },
+ {
+  "S. No.": 124,
+  "LIST OF ITEMS": "Curry Leaf",
+  "__EMPTY": "करी पत्ता/मीठो नीम",
+  "__EMPTY_1": "Murraya koenigii",
+  "CODE": "FL-0011"
+ },
+ {
+  "S. No.": 125,
+  "LIST OF ITEMS": "Malabar Nut",
+  "__EMPTY": "असुरो",
+  "__EMPTY_1": "Justicia adhatoda",
+  "CODE": "FL-0012"
+ },
+ {
+  "S. No.": 126,
+  "LIST OF ITEMS": "Echinacea",
+  "__EMPTY": "एकनेसा",
+  "__EMPTY_1": "Echinacea purpurea",
+  "CODE": "FL-0013"
+ },
+ {
+  "S. No.": "ROOTS & RHIZOMES (RR)"
+ },
+ {
+  "S. No.": 127,
+  "LIST OF ITEMS": "Chinese Yam",
+  "__EMPTY": "चिनियाँ तरुल",
+  "__EMPTY_1": "Dioscorea opposita",
+  "CODE": "RR-0001"
+ },
+ {
+  "S. No.": 128,
+  "LIST OF ITEMS": "Dioscorea Nipponica",
+  "__EMPTY": "भ्याकुर",
+  "__EMPTY_1": "Dioscorea nipponica",
+  "CODE": "RR-0002"
+ },
+ {
+  "S. No.": 129,
+  "LIST OF ITEMS": "Pinellia Tuber",
+  "__EMPTY": "पिनेलिया",
+  "__EMPTY_1": "Pinellia ternata",
+  "CODE": "RR-0003"
+ },
+ {
+  "S. No.": 130,
+  "LIST OF ITEMS": "Bletilla",
+  "__EMPTY": "ब्लेटिला",
+  "__EMPTY_1": "Bletilla striata",
+  "CODE": "RR-0004"
+ },
+ {
+  "S. No.": 131,
+  "LIST OF ITEMS": "Arisaema",
+  "__EMPTY": "बाँको",
+  "__EMPTY_1": "Arisaema",
+  "CODE": "RR-0005"
+ },
+ {
+  "S. No.": 132,
+  "LIST OF ITEMS": "Stemona Root",
+  "__EMPTY": "स्टेमोना/वन कुरिलो",
+  "__EMPTY_1": "Stemona sessilifolia",
+  "CODE": "RR-0006"
+ },
+ {
+  "S. No.": 133,
+  "LIST OF ITEMS": "Smilax/China Root",
+  "__EMPTY": "कुकुर तरुल/कुकुरडाइनो",
+  "__EMPTY_1": "Smilax glabra",
+  "CODE": "RR-0007"
+ },
+ {
+  "S. No.": 134,
+  "LIST OF ITEMS": "Solomon's Seal",
+  "__EMPTY": "खिराउले",
+  "__EMPTY_1": "Polygonatum spp.",
+  "CODE": "RR-0008"
+ },
+ {
+  "S. No.": 135,
+  "LIST OF ITEMS": "Fragrant Solomon's Seal",
+  "__EMPTY": "खिराउले (वासनादार)",
+  "__EMPTY_1": "Polygonatum odoratum",
+  "CODE": "RR-0009"
+ },
+ {
+  "S. No.": 136,
+  "LIST OF ITEMS": "Atractylodes (Black)",
+  "__EMPTY": "अट्राक्टिलोसाइड (कालो)",
+  "__EMPTY_1": "Atractylodes lancea",
+  "CODE": "RR-0010"
+ },
+ {
+  "S. No.": 137,
+  "LIST OF ITEMS": "Atractylodes (White)",
+  "__EMPTY": "अट्राक्टिलोसाइड (सेतो)",
+  "__EMPTY_1": "Atractylodes macrocephala",
+  "CODE": "RR-0011"
+ },
+ {
+  "S. No.": 138,
+  "LIST OF ITEMS": "Saposhnikovia",
+  "__EMPTY": "सापोश्निकोभिया",
+  "__EMPTY_1": "Saposhnikovia divaricata",
+  "CODE": "RR-0012"
+ },
+ {
+  "S. No.": 139,
+  "LIST OF ITEMS": "Gentian Root",
+  "__EMPTY": "जेन्सियन",
+  "__EMPTY_1": "Gentiana macrophylla",
+  "CODE": "RR-0013"
+ },
+ {
+  "S. No.": 140,
+  "LIST OF ITEMS": "Clematis Root",
+  "__EMPTY": "क्लेमाटिस",
+  "__EMPTY_1": "Clematis chinensis",
+  "CODE": "RR-0014"
+ },
+ {
+  "S. No.": 141,
+  "LIST OF ITEMS": "Wild Ginger/Asarum",
+  "__EMPTY": "जंगली अदुवा",
+  "__EMPTY_1": "Asarum sieboldii",
+  "CODE": "RR-0015"
+ },
+ {
+  "S. No.": 142,
+  "LIST OF ITEMS": "Bupleurum",
+  "__EMPTY": "बुप्लुरम/चाइ हु",
+  "__EMPTY_1": "Bupleurum chinense",
+  "CODE": "RR-0016"
+ },
+ {
+  "S. No.": 143,
+  "LIST OF ITEMS": "Scutellaria/Skullcap",
+  "__EMPTY": "स्कलक्याप",
+  "__EMPTY_1": "Scutellaria baicalensis",
+  "CODE": "RR-0017"
+ },
+ {
+  "S. No.": 144,
+  "LIST OF ITEMS": "Salvia/Danshen",
+  "__EMPTY": "साल्भिया",
+  "__EMPTY_1": "Salvia miltiorrhiza",
+  "CODE": "RR-0018"
+ },
+ {
+  "S. No.": 145,
+  "LIST OF ITEMS": "Figwort Root",
+  "__EMPTY": "फिगवर्ट",
+  "__EMPTY_1": "Scrophularia ningpoensis",
+  "CODE": "RR-0019"
+ },
+ {
+  "S. No.": 146,
+  "LIST OF ITEMS": "Rehmannia/Chinese Foxglove",
+  "__EMPTY": "फक्सग्लव",
+  "__EMPTY_1": "Rehmannia glutinosa",
+  "CODE": "RR-0020"
+ },
+ {
+  "S. No.": 147,
+  "LIST OF ITEMS": "Morinda Root",
+  "__EMPTY": "मोरिण्डा",
+  "__EMPTY_1": "Morinda officinalis",
+  "CODE": "RR-0021"
+ },
+ {
+  "S. No.": 148,
+  "LIST OF ITEMS": "Heart-leaved Moonseed (Root)",
+  "__EMPTY": "गुर्जो (जरा)",
+  "__EMPTY_1": "Tinospora cordifolia",
+  "CODE": "RR-0022"
+ },
+ {
+  "S. No.": 149,
+  "LIST OF ITEMS": "Spatholobus Stem",
+  "__EMPTY": "स्पाथोलोबस",
+  "__EMPTY_1": "Spatholobus suberectus",
+  "CODE": "RR-0023"
+ },
+ {
+  "S. No.": 150,
+  "LIST OF ITEMS": "Drynaria",
+  "__EMPTY": "ड्राइनारिया",
+  "__EMPTY_1": "Drynaria fortunei",
+  "CODE": "RR-0024"
+ },
+ {
+  "S. No.": 151,
+  "LIST OF ITEMS": "Psoralea Fruit",
+  "__EMPTY": "बाकुची",
+  "__EMPTY_1": "Psoralea corylifolia",
+  "CODE": "RR-0025"
+ },
+ {
+  "S. No.": 152,
+  "LIST OF ITEMS": "Curculigo/Golden Eye Grass",
+  "__EMPTY": "कालो मुसली",
+  "__EMPTY_1": "Curculigo orchioides",
+  "CODE": "RR-0026"
+ },
+ {
+  "S. No.": 153,
+  "LIST OF ITEMS": "Epimedium/Horny Goat Weed",
+  "__EMPTY": "एपिमिडियम",
+  "__EMPTY_1": "Epimedium spp.",
+  "CODE": "RR-0027"
+ },
+ {
+  "S. No.": "STAPLES & COMMODITIES (SC)"
+ },
+ {
+  "S. No.": 154,
+  "LIST OF ITEMS": "Foxtail Millet",
+  "__EMPTY": "कागुनो",
+  "__EMPTY_1": "Setaria italica",
+  "CODE": "SC-0001"
+ },
+ {
+  "S. No.": 155,
+  "LIST OF ITEMS": "Proso Millet",
+  "__EMPTY": "चिनो",
+  "__EMPTY_1": "Panicum miliaceum",
+  "CODE": "SC-0002"
+ },
+ {
+  "S. No.": 156,
+  "LIST OF ITEMS": "Finger Millet Flour",
+  "__EMPTY": "कोदोको पिठो",
+  "__EMPTY_1": "Eleusine coracana",
+  "CODE": "SC-0003"
+ },
+ {
+  "S. No.": 157,
+  "LIST OF ITEMS": "Buckwheat Flour",
+  "__EMPTY": "फापरको पिठो",
+  "__EMPTY_1": "Fagopyrum esculentum",
+  "CODE": "SC-0004"
+ },
+ {
+  "S. No.": 158,
+  "LIST OF ITEMS": "Rice Flour",
+  "__EMPTY": "चामलको पिठो",
+  "__EMPTY_1": "Oryza sativa",
+  "CODE": "SC-0005"
+ },
+ {
+  "S. No.": 159,
+  "LIST OF ITEMS": "Taichin Rice Flour",
+  "__EMPTY": "ताइचिन चामलको पिठो",
+  "__EMPTY_1": "Oryza sativa",
+  "CODE": "SC-0006"
+ },
+ {
+  "S. No.": 160,
+  "LIST OF ITEMS": "Corn Flour",
+  "__EMPTY": "मकैको पिठो",
+  "__EMPTY_1": "Zea mays",
+  "CODE": "SC-0007"
+ },
+ {
+  "S. No.": 161,
+  "LIST OF ITEMS": "Barley Flour",
+  "__EMPTY": "जौको पिठो",
+  "__EMPTY_1": "Hordeum vulgare",
+  "CODE": "SC-0008"
+ },
+ {
+  "S. No.": 162,
+  "LIST OF ITEMS": "Black-eyed Beans",
+  "__EMPTY": "बोडी",
+  "__EMPTY_1": "Vigna unguiculata unguiculata",
+  "CODE": "SC-0009"
+ },
+ {
+  "S. No.": 163,
+  "LIST OF ITEMS": "Green Peas (Small)",
+  "__EMPTY": "हरियो केराऊ",
+  "__EMPTY_1": "Pisum sativum arvense",
+  "CODE": "SC-0010"
+ },
+ {
+  "S. No.": 164,
+  "LIST OF ITEMS": "Horse Gram",
+  "__EMPTY": "गहत",
+  "__EMPTY_1": "Macrotyloma uniflorum",
+  "CODE": "SC-0011"
+ },
+ {
+  "S. No.": 165,
+  "LIST OF ITEMS": "Rice Beans",
+  "__EMPTY": "मस्याङ",
+  "__EMPTY_1": "Vigna umbellata",
+  "CODE": "SC-0012"
+ },
+ {
+  "S. No.": 166,
+  "LIST OF ITEMS": "Soybean (Black) ",
+  "__EMPTY": "भटमास (कालो)",
+  "__EMPTY_1": "Glycine max",
+  "CODE": "SC-0013"
+ },
+ {
+  "S. No.": 167,
+  "LIST OF ITEMS": "Soybean (Brown)",
+  "__EMPTY": "भटमास (खैरो)",
+  "__EMPTY_1": "Glycine max",
+  "CODE": "SC-0014"
+ },
+ {
+  "S. No.": 168,
+  "LIST OF ITEMS": "Soybean (White)",
+  "__EMPTY": "भटमास (सेतो)",
+  "__EMPTY_1": "Glycine max",
+  "CODE": "SC-0015"
+ },
+ {
+  "S. No.": 169,
+  "LIST OF ITEMS": "Carrom Seeds",
+  "__EMPTY": "ज्वानो",
+  "__EMPTY_1": "Trachyspermum ammi",
+  "CODE": "SC-0016"
+ },
+ {
+  "S. No.": 170,
+  "LIST OF ITEMS": "Sesame Powder",
+  "__EMPTY": "तिलको धुलो",
+  "__EMPTY_1": "Sesamum indicum",
+  "CODE": "SC-0017"
+ },
+ {
+  "S. No.": 171,
+  "LIST OF ITEMS": "Nettle Powder",
+  "__EMPTY": "सिस्नुको धुलो",
+  "__EMPTY_1": "Urtica dioica",
+  "CODE": "SC-0018"
+ },
+ {
+  "S. No.": 172,
+  "LIST OF ITEMS": "Jumla Black Beans",
+  "__EMPTY": "जुम्ला कालो सिमी",
+  "__EMPTY_1": "Phaseolus vulgaris",
+  "CODE": "SC-0019"
+ },
+ {
+  "S. No.": 173,
+  "LIST OF ITEMS": "Jumla Brown Rice",
+  "__EMPTY": "जुम्ला मार्सी चामल",
+  "__EMPTY_1": "Oryza sativa japonica",
+  "CODE": "SC-0020"
+ },
+ {
+  "S. No.": 174,
+  "LIST OF ITEMS": "Multigrain Satu",
+  "__EMPTY": "मल्टिग्रेन सातु",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0021"
+ },
+ {
+  "S. No.": 175,
+  "LIST OF ITEMS": "Chickpea Satu",
+  "__EMPTY": "चनाको सातु",
+  "__EMPTY_1": "Cicer arietinum",
+  "CODE": "SC-0022"
+ },
+ {
+  "S. No.": 176,
+  "LIST OF ITEMS": "Mixed Beans",
+  "__EMPTY": "क्वाँटी",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0023"
+ },
+ {
+  "S. No.": 177,
+  "LIST OF ITEMS": "Mixed Lentils",
+  "__EMPTY": "मिक्स दाल",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0024"
+ },
+ {
+  "S. No.": 178,
+  "LIST OF ITEMS": "Red Lentil",
+  "__EMPTY": "मुसुरोको दाल",
+  "__EMPTY_1": "Lens culinaris",
+  "CODE": "SC-0025"
+ },
+ {
+  "S. No.": 179,
+  "LIST OF ITEMS": "Black Gram",
+  "__EMPTY": "मासको दाल",
+  "__EMPTY_1": "Vigna mungo",
+  "CODE": "SC-0026"
+ },
+ {
+  "S. No.": 180,
+  "LIST OF ITEMS": "Jumla Split Beans",
+  "__EMPTY": "जुम्ला सिमीको दाल",
+  "__EMPTY_1": "Phaseolus vulgaris",
+  "CODE": "SC-0027"
+ },
+ {
+  "S. No.": 181,
+  "LIST OF ITEMS": "Rajma Split Beans",
+  "__EMPTY": "राजमा दाल",
+  "__EMPTY_1": "Phaseolus vulgaris",
+  "CODE": "SC-0028"
+ },
+ {
+  "S. No.": 182,
+  "LIST OF ITEMS": "Dry Mustard Greens (Fermented)",
+  "__EMPTY": "रायो गुन्द्रुक",
+  "__EMPTY_1": "Brassica juncea",
+  "CODE": "SC-0029"
+ },
+ {
+  "S. No.": 183,
+  "LIST OF ITEMS": "Dry Rapeseed Greens (Fermented)",
+  "__EMPTY": "तोरी गुन्द्रुक",
+  "__EMPTY_1": "Brassica napus",
+  "CODE": "SC-0030"
+ },
+ {
+  "S. No.": 184,
+  "LIST OF ITEMS": "Taro Root Balls (Masyaura)",
+  "__EMPTY": "पिँडालु मस्यौरा",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0031"
+ },
+ {
+  "S. No.": 185,
+  "LIST OF ITEMS": "Sichuan Pepper",
+  "__EMPTY": "टिमुर",
+  "__EMPTY_1": "Zanthoxylum simulans",
+  "CODE": "SC-0032"
+ },
+ {
+  "S. No.": 186,
+  "LIST OF ITEMS": "Black Salt",
+  "__EMPTY": "बिरे नुन",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0033"
+ },
+ {
+  "S. No.": 187,
+  "LIST OF ITEMS": "Rock Salt",
+  "__EMPTY": "सिदे नुन",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0034"
+ },
+ {
+  "S. No.": 188,
+  "LIST OF ITEMS": "Turmeric Powder",
+  "__EMPTY": "बेसार",
+  "__EMPTY_1": "Curcuma longa",
+  "CODE": "SC-0035"
+ },
+ {
+  "S. No.": 189,
+  "LIST OF ITEMS": "Ginger Powder",
+  "__EMPTY": "अदुवाको धुलो/सुठो",
+  "__EMPTY_1": "Zingiber officinale",
+  "CODE": "SC-0036"
+ },
+ {
+  "S. No.": 190,
+  "LIST OF ITEMS": "Roselle",
+  "__EMPTY": "बेलझण्डा",
+  "__EMPTY_1": "Hibiscus sabdariffa",
+  "CODE": "SC-0037"
+ },
+ {
+  "S. No.": 191,
+  "LIST OF ITEMS": "Amaranth",
+  "__EMPTY": "लट्टे",
+  "__EMPTY_1": "Amaranthus caudatus",
+  "CODE": "SC-0038"
+ },
+ {
+  "S. No.": 192,
+  "LIST OF ITEMS": "Jaggery",
+  "__EMPTY": "सखर",
+  "__EMPTY_1": "Saccharum officinarum L.",
+  "CODE": "SC-0039"
+ },
+ {
+  "S. No.": 193,
+  "LIST OF ITEMS": "Roasted Corn",
+  "__EMPTY": "भुटेको मकै",
+  "__EMPTY_1": "Zea mays",
+  "CODE": "SC-0040"
+ },
+ {
+  "S. No.": 194,
+  "LIST OF ITEMS": "Cardamom",
+  "__EMPTY": "अलैँची",
+  "__EMPTY_1": "Elettaria cardamomum",
+  "CODE": "SC-0041"
+ },
+ {
+  "S. No.": 195,
+  "LIST OF ITEMS": "Honey",
+  "__EMPTY": "मह",
+  "__EMPTY_1": "Apis mellifera",
+  "CODE": "SC-0042"
+ },
+ {
+  "S. No.": 196,
+  "LIST OF ITEMS": "Chamomile Tea Seed",
+  "__EMPTY": "क्यामोमाइल चिया",
+  "__EMPTY_1": "Matricaria chamomilla",
+  "CODE": "SC-0043"
+ },
+ {
+  "S. No.": 197,
+  "LIST OF ITEMS": "Coffee Beans (Green)",
+  "__EMPTY": "कफी बिन (हरियो)",
+  "__EMPTY_1": "Coffea arabica",
+  "CODE": "SC-0044"
+ },
+ {
+  "S. No.": 198,
+  "LIST OF ITEMS": "Coffee Beans (Roasted)",
+  "__EMPTY": "कफी बिन (भुटेको)",
+  "__EMPTY_1": "Coffea arabica",
+  "CODE": "SC-0045"
+ },
+ {
+  "S. No.": 199,
+  "LIST OF ITEMS": "Buff Achaar",
+  "__EMPTY": "बफ अचार",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0046"
+ },
+ {
+  "S. No.": 200,
+  "LIST OF ITEMS": "Buff Sukuti Achaar",
+  "__EMPTY": "बफ सुकुटी अचार",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0047"
+ },
+ {
+  "S. No.": 201,
+  "LIST OF ITEMS": "Chicken Achaar",
+  "__EMPTY": "चिकेन अचार",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0048"
+ },
+ {
+  "S. No.": 202,
+  "LIST OF ITEMS": "Mutton Achaar",
+  "__EMPTY": "मटन अचार",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0049"
+ },
+ {
+  "S. No.": 203,
+  "LIST OF ITEMS": "Akbare Masala Achaar",
+  "__EMPTY": "अकबरे मसला अचार",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0050"
+ },
+ {
+  "S. No.": 204,
+  "LIST OF ITEMS": "Timur Chhop",
+  "__EMPTY": "टिमुर छोप",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0051"
+ },
+ {
+  "S. No.": 205,
+  "LIST OF ITEMS": "Sidra Achaar",
+  "__EMPTY": "सिद्रा अचार",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0052"
+ },
+ {
+  "S. No.": 206,
+  "LIST OF ITEMS": "Dalle with Tama Achaar",
+  "__EMPTY": "डल्ले तामा अचार",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0053"
+ },
+ {
+  "S. No.": 207,
+  "LIST OF ITEMS": "Mula Achaar",
+  "__EMPTY": "मुला अचार",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0054"
+ },
+ {
+  "S. No.": 208,
+  "LIST OF ITEMS": "Buff Momo (Frozen)",
+  "__EMPTY": "बफ मम",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0055"
+ },
+ {
+  "S. No.": 209,
+  "LIST OF ITEMS": "Chicken Momo (Frozen)",
+  "__EMPTY": "चिकेन मःमः",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0056"
+ },
+ {
+  "S. No.": 210,
+  "LIST OF ITEMS": "Black Rice",
+  "__EMPTY": "कालो चामल",
+  "__EMPTY_1": "Oryza sativa L. indica",
+  "CODE": "SC-0057"
+ },
+ {
+  "S. No.": 211,
+  "LIST OF ITEMS": "Walnut",
+  "__EMPTY": "ओखर",
+  "__EMPTY_1": "Juglans regia",
+  "CODE": "SC-0058"
+ },
+ {
+  "S. No.": 212,
+  "LIST OF ITEMS": "Hog Plum Powder",
+  "__EMPTY": "लप्सीको धुलो",
+  "__EMPTY_1": "Choerospondias axillaris",
+  "CODE": "SC-0059"
+ },
+ {
+  "S. No.": 213,
+  "LIST OF ITEMS": "Flax Seed Powder",
+  "__EMPTY": "आलसको धुलो",
+  "__EMPTY_1": "Linum usitatissimum",
+  "CODE": "SC-0060"
+ },
+ {
+  "S. No.": 214,
+  "LIST OF ITEMS": "Indian Gooseberry/Amala Powder",
+  "__EMPTY": "अमलाको धुलो",
+  "__EMPTY_1": "Phyllanthus emblica",
+  "CODE": "SC-0061"
+ },
+ {
+  "S. No.": 215,
+  "LIST OF ITEMS": "Stevia Leaves (Dry)",
+  "__EMPTY": "स्टेभियाको पात (सुकेको)",
+  "__EMPTY_1": "Stevia rebaudiana",
+  "CODE": "SC-0062"
+ },
+ {
+  "S. No.": 216,
+  "LIST OF ITEMS": "Holy Basil Leaves (Dry)",
+  "__EMPTY": "तुलसीको पात (सुकेको)",
+  "__EMPTY_1": "Ocimum tenuiflorum",
+  "CODE": "SC-0063"
+ },
+ {
+  "S. No.": 217,
+  "LIST OF ITEMS": "Red Beaten Rice",
+  "__EMPTY": "रातो ताइचिन चिउरा",
+  "__EMPTY_1": "Oryza sativa",
+  "CODE": "SC-0064"
+ },
+ {
+  "S. No.": 218,
+  "LIST OF ITEMS": "White Beaten Rice",
+  "__EMPTY": "सेतो ताइचिन चिउरा",
+  "__EMPTY_1": "Oryza sativa",
+  "CODE": "SC-0065"
+ },
+ {
+  "S. No.": 219,
+  "LIST OF ITEMS": "White Corn Grits",
+  "__EMPTY": "सेतो मकैको च्याँख्ला",
+  "__EMPTY_1": "Zea mays",
+  "CODE": "SC-0066"
+ },
+ {
+  "S. No.": 220,
+  "LIST OF ITEMS": "Corn Grits",
+  "__EMPTY": "मकैको च्याँख्ला",
+  "__EMPTY_1": "Zea mays",
+  "CODE": "SC-0067"
+ },
+ {
+  "S. No.": 221,
+  "LIST OF ITEMS": "Wheat Grits",
+  "__EMPTY": "गहुँको च्याँख्ला",
+  "__EMPTY_1": "Triticum aestivum",
+  "CODE": "SC-0068"
+ },
+ {
+  "S. No.": 222,
+  "LIST OF ITEMS": "Barley Grits",
+  "__EMPTY": "जौको च्याँख्ला",
+  "__EMPTY_1": "Hordeum vulgare",
+  "CODE": "SC-0069"
+ },
+ {
+  "S. No.": 223,
+  "LIST OF ITEMS": "Worship Materials",
+  "__EMPTY": "पूजा सामग्री",
+  "__EMPTY_1": "N/A",
+  "CODE": "SC-0070"
+ }
+]
