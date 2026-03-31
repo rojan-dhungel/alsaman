@@ -46,7 +46,7 @@ export default function Hero() {
           </div>
 
           {/* Large imagery area - Asymmetrical and layered like reference */}
-          <div className="flex-1 relative lg:max-w-2xl transform lg:rotate-2 transition-all hover:rotate-0 duration-1000">
+          <div className="flex-1 relative lg:max-w-2xl transition-all duration-1000">
             {/* Artistic Leaf SVG 1 */}
             <div className="absolute -top-16 -left-16 w-32 h-32 text-primary/10 -rotate-12 animate-float">
                <svg viewBox="0 0 100 100" fill="currentColor">

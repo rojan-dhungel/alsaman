@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg group-hover:rotate-6 transition-transform">
+            <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg transition-transform">
               <span className="text-white font-bold text-xl">AS</span>
             </div>
             <span className="text-xl font-heading font-extrabold tracking-tight text-primary-dark">
@@ -23,7 +23,6 @@ export default function Navbar() {
 
           {/* Desktop Links */}
           <div className="hidden lg:flex items-center space-x-1 font-black text-[13px] uppercase tracking-wider">
-            <NavLink href="/#home">Home</NavLink>
             <NavLink href="/#about">About Us</NavLink>
             <NavLink href="/#workflow">How we work</NavLink>
             

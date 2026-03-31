@@ -110,3 +110,11 @@ export function getProductsByCategory(category: CategoryKey): Product[] {
 export function getAllCategories(): CategoryKey[] {
   return Object.values(categoryMap);
 }
+
+export function getAllProducts(): Product[] {
+  const all: Product[] = [];
+  getAllCategories().forEach(cat => {
+    all.push(...getProductsByCategory(cat));
+  });
+  return all;
+}
