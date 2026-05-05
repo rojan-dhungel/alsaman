@@ -1,141 +1,162 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 
+interface AboutContent {
+  id: string;
+  title: string;
+  subtitle: string | null;
+  content: string;
+  imageUrl: string | null;
+  order: number;
+}
+
+interface Heading {
+  title: string;
+  subtitle: string | null;
+}
+
 export default function AboutPage() {
+  const [contents, setContents] = useState<AboutContent[]>([]);
+  const [heading, setHeading] = useState<Heading>({
+    title: "Our Journey",
+    subtitle: "Al Saman Global is a business group established in 2018, connecting the organic riches of Nepal to the world."
+  });
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const [contentsRes, headingRes] = await Promise.all([
+          fetch("/api/about"),
+          fetch("/api/headings?key=about")
+        ]);
+
+        if (contentsRes.ok) {
+          const data = await contentsRes.json();
+          setContents(data.sort((a: AboutContent, b: AboutContent) => a.order - b.order));
+        }
+
+        if (headingRes.ok) {
+          const data = await headingRes.json();
+          if (data) setHeading({ title: data.title, subtitle: data.subtitle });
+        }
+      } catch (error) {
+        console.error("Error fetching about data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="min-h-screen bg-bg-main selection:bg-primary/20">
-      <Navbar />
-      
       <main className="pt-32 pb-24">
-        {/* Header Section */}
+        {/* Dynamic Header Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-4xl space-y-8 animate-fade-in-up">
             <h1 className="text-6xl lg:text-9xl font-heading font-black text-primary-dark leading-tight tracking-tighter">
-              Our <span className="text-primary italic font-serif">Journey</span>.
+               {heading.title.split(" ").map((word, i, arr) => (
+                <span key={i}>
+                  {i === arr.length - 1 ? (
+                    <span className="text-primary italic font-serif ml-2">{word}</span>
+                  ) : (
+                    <span>{word} </span>
+                  )}
+                </span>
+              ))}
             </h1>
-            <p className="text-2xl lg:text-4xl font-bold text-text-secondary leading-tight opacity-80">
-              Al Saman Global is a business group established in 2018, 
-              connecting the organic riches of Nepal to the world.
-            </p>
+            {heading.subtitle && (
+              <p className="text-2xl lg:text-4xl font-bold text-text-secondary leading-tight opacity-80">
+                {heading.subtitle}
+              </p>
+            )}
           </div>
         </section>
 
-        {/* Vision & Mission */}
-        <section className="bg-white py-24 border-y border-border/50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
-               <div className="space-y-12">
-                  <div className="space-y-4">
-                     <p className="text-primary font-black uppercase tracking-widest text-sm">Mission & Vision</p>
-                     <p className="text-lg text-text-secondary leading-loose font-medium">
-                        Export Vegetables, Fruits, Flowers, and other agricultural products from our homeland Nepal 
-                        to Europe, the Middle East, and the USA. In the future, we aim to spread our service globally. 
-                        We encourage our farmers to produce high-quality organic products that command high demand 
-                        internationally.
-                     </p>
-                  </div>
-                  <div className="space-y-4">
-                     <p className="text-primary font-black uppercase tracking-widest text-sm">Our Aim</p>
-                     <p className="text-lg text-text-secondary leading-loose font-medium">
-                        To contribute foreign currency revenue by selling agricultural products to third countries. 
-                        As an agricultural country importing billions in produce, we aim to revolutionize this cycle 
-                        and make Nepal economically sustainable through modernized, organic farming.
-                     </p>
-                  </div>
-               </div>
-               <div className="relative">
-                  <div className="aspect-square bg-bg-section rounded-[4rem] overflow-hidden shadow-2xl relative">
-                     <div className="absolute inset-0 bg-primary/10 animate-pulse"></div>
-                     <div className="absolute inset-x-0 bottom-0 p-12 bg-gradient-to-t from-primary/30 to-transparent">
-                        <p className="text-white font-black text-4xl">100+<br />Agro-Ecological Zones</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
+        {/* Dynamic Content Sections */}
+        {loading ? (
+          <div className="flex justify-center py-20">
+             <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-primary"></div>
           </div>
-        </section>
+        ) : (
+          <div className="space-y-0">
+            {contents.map((block, index) => (
+              <section key={block.id} className={`py-24 lg:py-32 ${index % 2 === 1 ? 'bg-white border-y border-border/50' : ''}`}>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-20 items-center`}>
+                    <div className="flex-1 space-y-8">
+                      <div className="space-y-4">
+                        <p className="text-primary font-black uppercase tracking-widest text-sm">About Us</p>
+                        <h2 className="text-4xl lg:text-6xl font-heading font-black text-primary-dark tracking-tight">{block.title}</h2>
+                        {block.subtitle && <p className="text-primary italic font-serif text-2xl">{block.subtitle}</p>}
+                      </div>
+                      <p className="text-lg lg:text-xl text-text-secondary leading-relaxed font-medium whitespace-pre-wrap">
+                        {block.content}
+                      </p>
+                    </div>
+                    {block.imageUrl && (
+                      <div className="flex-1 w-full">
+                        <div className="aspect-[4/3] bg-bg-section rounded-[4rem] overflow-hidden shadow-2xl relative border border-primary/5">
+                           {/* eslint-disable-next-line @next/next/no-img-element */}
+                           <img 
+                            src={block.imageUrl} 
+                            alt={block.title} 
+                            className="w-full h-full object-cover transition-transform duration-1000 hover:scale-110"
+                            onError={(e) => (e.currentTarget.src = "https://placehold.co/800x600?text=About+Image")}
+                           />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </section>
+            ))}
+          </div>
+        )}
 
-        {/* Gift of Nature Section */}
+        {/* Static Values Section (Keep for branding) */}
         <section className="py-24 lg:py-40">
            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-20 space-y-6">
-                 <h2 className="text-5xl lg:text-7xl font-heading font-black text-primary-dark">Gift of the Nature</h2>
+                 <h2 className="text-5xl lg:text-7xl font-heading font-black text-primary-dark tracking-tight">Gift of the Nature</h2>
                  <p className="text-xl text-text-secondary max-w-3xl mx-auto italic font-medium opacity-70">
                     "Food from higher altitudes of Nepal, naturally gifted and unmatched."
                  </p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-                 <div className="space-y-6">
-                    <div className="text-5xl">🏔️</div>
-                    <h4 className="text-2xl font-black text-primary-dark">High Altitude</h4>
-                    <p className="text-text-secondary leading-relaxed">
+                 <div className="group space-y-6 p-10 bg-white rounded-[3rem] border border-primary/5 shadow-soft hover:shadow-2xl transition-all duration-500">
+                    <div className="text-5xl transform group-hover:scale-125 transition-transform">🏔️</div>
+                    <h4 className="text-2xl font-black text-primary-dark uppercase tracking-tight">High Altitude</h4>
+                    <p className="text-text-secondary leading-relaxed font-medium">
                        Home to Mount Everest. 8 of the 10 highest peaks in the world are in Nepal.
                     </p>
                  </div>
-                 <div className="space-y-6">
-                    <div className="text-5xl">🌱</div>
-                    <h4 className="text-2xl font-black text-primary-dark">Chemical Free</h4>
-                    <p className="text-text-secondary leading-relaxed">
+                 <div className="group space-y-6 p-10 bg-white rounded-[3rem] border border-primary/5 shadow-soft hover:shadow-2xl transition-all duration-500">
+                    <div className="text-5xl transform group-hover:scale-125 transition-transform">🌱</div>
+                    <h4 className="text-2xl font-black text-primary-dark uppercase tracking-tight">Chemical Free</h4>
+                    <p className="text-text-secondary leading-relaxed font-medium">
                        High altitude naturally negates the need for manual alteration with inorganic chemicals.
                     </p>
                  </div>
-                 <div className="space-y-6">
-                    <div className="text-5xl">🧔</div>
-                    <h4 className="text-2xl font-black text-primary-dark">2/3 Farmer Pop.</h4>
-                    <p className="text-text-secondary leading-relaxed">
+                 <div className="group space-y-6 p-10 bg-white rounded-[3rem] border border-primary/5 shadow-soft hover:shadow-2xl transition-all duration-500">
+                    <div className="text-5xl transform group-hover:scale-125 transition-transform">🧔</div>
+                    <h4 className="text-2xl font-black text-primary-dark uppercase tracking-tight">Farmer Power</h4>
+                    <p className="text-text-secondary leading-relaxed font-medium">
                        Agriculture is the mainstay. We empower remote farmers to reach global markets.
                     </p>
                  </div>
               </div>
            </div>
         </section>
-
-        {/* Partnership side: Qatar & Opportunities */}
-        <section className="bg-primary-dark text-white py-24 lg:py-40 relative overflow-hidden">
-           <div className="absolute top-0 right-0 w-[60%] h-full bg-primary/10 skew-x-12 -mr-32"></div>
-           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-              <div className="flex flex-col lg:flex-row gap-20 items-center">
-                 <div className="flex-1 space-y-12">
-                    <div className="space-y-6">
-                       <h2 className="text-5xl lg:text-7xl font-heading font-black leading-tight">Partnership with Qatar</h2>
-                       <p className="text-2xl font-bold opacity-80 decoration-secondary decoration-4 underline underline-offset-8">What are the opportunities?</p>
-                    </div>
-                    <div className="space-y-8 opacity-70 text-lg leading-loose">
-                       <p>
-                          Qatar is a potential marketplace for Nepal. Currently, food sources are often unidentified 
-                          and opened to health hazards from excessive pesticide and fertilizer use.
-                       </p>
-                       <p>
-                          We offer chemical-free, high-altitude produce directly from Nepal's uphill remote farms. 
-                          We manage scattered yields using ICT-based solutions developed over 5 years.
-                       </p>
-                    </div>
-                 </div>
-                 <div className="flex-1 w-full">
-                    <div className="p-12 border-2 border-white/20 rounded-[3rem] backdrop-blur-md bg-white/5 space-y-10">
-                       <div className="space-y-4">
-                          <h4 className="text-3xl font-black">Health Hazard Cleanup</h4>
-                          <p className="text-lg opacity-60">
-                             Ending the use of unidentified sources and unethical cultivation practices.
-                          </p>
-                       </div>
-                       <div className="w-full h-px bg-white/10"></div>
-                       <div className="space-y-4">
-                          <h4 className="text-3xl font-black">ICT Solutions</h4>
-                          <p className="text-lg opacity-60">
-                             Effectively collecting scattered yields from remote hills for 5+ years.
-                          </p>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </section>
       </main>
-      
-      <Footer />
     </div>
   );
 }

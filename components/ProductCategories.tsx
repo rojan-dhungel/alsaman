@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 import UniversalButton from "./UniversalButton";
+import { Loader2 } from "lucide-react";
 
 // Custom Artistic SVGs for a more "Agro-Handmade" feel
 const ArtisticVegetable = ({ className }: { className?: string }) => (
@@ -57,51 +58,51 @@ const ArtisticStaples = ({ className }: { className?: string }) => (
   </svg>
 );
 
+interface Category {
+  id: string;
+  name: string;
+  slug: string;
+  description: string | null;
+  imageUrl: string | null;
+}
+
 export default function ProductCategories() {
   const [flippedId, setFlippedId] = useState<string | null>(null);
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const categories = [
-    {
-      id: "vegetables",
-      title: "VEGETABLES",
-      image: "/vegetables.png",
-      color: "primary",
-      icon: <ArtisticVegetable className="w-12 h-12 text-primary" />,
-      description: "Organic vegetables harvested from high-altitude farms, 100% pesticide-free and packed with nutrients."
-    },
-    {
-      id: "medicinal-herbs",
-      title: "HERBS, FRUITS & NUTS",
-      image: "/fruits.png", // Temporarily using fruits image
-      color: "secondary",
-      icon: <ArtisticFruit className="w-12 h-12 text-secondary" />,
-      description: "Naturally ripened, hand-picked fruits, nuts, and medicinal herbs from the Himalayan foothills."
-    },
-    {
-      id: "flowers-leaves",
-      title: "FLOWERS & LEAVES",
-      image: "/flowers.png",
-      color: "accent",
-      icon: <ArtisticFlower className="w-12 h-12 text-accent" />,
-      description: "Vibrant and long-lasting exotic flowers and aromatic leaves, carefully packed for international export."
-    },
-    {
-      id: "roots-rhizomes",
-      title: "ROOTS & RHIZOMES",
-      image: null, // Loading state will show
-      color: "primary",
-      icon: <ArtisticRoot className="w-12 h-12 text-primary" />,
-      description: "Premium quality roots and rhizomes, naturally dried and preserved for maximum efficacy."
-    },
-    {
-      id: "staples-commodities",
-      title: "STAPLES & COMMODITIES",
-      image: null,
-      color: "secondary",
-      icon: <ArtisticStaples className="w-12 h-12 text-secondary" />,
-      description: "Essential staple crops and high-quality agricultural commodities sourced directly from local farmers."
-    }
-  ];
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const res = await fetch("/api/categories");
+        if (res.ok) {
+          const data = await res.json();
+          setCategories(data);
+        }
+      } catch (error) {
+        console.error("Error fetching categories:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchCategories();
+  }, []);
+
+  const getIconForSlug = (slug: string) => {
+    if (slug.includes("vegetable")) return <ArtisticVegetable className="w-12 h-12 text-primary" />;
+    if (slug.includes("fruit") || slug.includes("herb") || slug.includes("nut")) return <ArtisticFruit className="w-12 h-12 text-secondary" />;
+    if (slug.includes("flower") || slug.includes("leaf")) return <ArtisticFlower className="w-12 h-12 text-accent" />;
+    if (slug.includes("root") || slug.includes("rhizome")) return <ArtisticRoot className="w-12 h-12 text-primary" />;
+    return <ArtisticStaples className="w-12 h-12 text-secondary" />;
+  };
+
+  if (loading) {
+     return (
+        <div className="flex justify-center py-24">
+           <Loader2 className="animate-spin h-10 w-10 text-primary" />
+        </div>
+     );
+  }
 
   return (
     <section id="products" className="py-24 lg:py-40 bg-bg-soft relative overflow-hidden">
@@ -134,7 +135,7 @@ export default function ProductCategories() {
           {categories.map((cat) => (
             <div 
               key={cat.id} 
-              id={cat.id} 
+              id={cat.slug} 
               className="group relative cursor-pointer perspective-1000 w-full max-w-lg mx-auto"
               onClick={() => setFlippedId(flippedId === cat.id ? null : cat.id)}
             >
@@ -145,10 +146,10 @@ export default function ProductCategories() {
                   <div className="absolute inset-0 backface-hidden rounded-[4rem] overflow-hidden bg-white border border-white/50 shadow-2xl group-hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.3)] transition-shadow duration-[800ms]">
                       {/* Image with zoom effect */}
                      <div className="absolute inset-0">
-                        {cat.image ? (
+                        {cat.imageUrl ? (
                           <Image 
-                            src={cat.image} 
-                            alt={cat.title} 
+                            src={cat.imageUrl} 
+                            alt={cat.name} 
                             fill 
                             className="object-cover group-hover:scale-110 transition-transform duration-1000"
                           />
@@ -163,7 +164,7 @@ export default function ProductCategories() {
                      {/* Title & Agro SVG */}
                      <div className="absolute inset-x-0 bottom-0 p-8 lg:p-10">
                         <h3 className="text-3xl lg:text-4xl font-heading font-black text-white drop-shadow-2xl">
-                           {cat.title}
+                           {cat.name}
                         </h3>
                      </div>
 
@@ -177,19 +178,19 @@ export default function ProductCategories() {
                   {/* BACK SIDE */}
                   <div className="absolute inset-0 backface-hidden rotate-y-180 rounded-[4rem] overflow-hidden bg-white border-4 border-primary/5 shadow-2xl group-hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.3)] transition-shadow duration-[800ms] p-12 flex flex-col justify-between items-center text-center">
                      <div className="w-20 h-20 bg-bg-section rounded-full flex items-center justify-center shadow-inner">
-                        {cat.icon}
+                        {getIconForSlug(cat.slug)}
                      </div>
                      
                      <div className="space-y-4">
                         <p className="text-primary font-black uppercase tracking-widest text-xs">Quick Brief</p>
-                        <h4 className="text-3xl font-heading font-black text-primary-dark uppercase tracking-tighter">{cat.title}</h4>
+                        <h4 className="text-3xl font-heading font-black text-primary-dark uppercase tracking-tighter">{cat.name}</h4>
                         <p className="text-text-secondary text-base font-medium leading-relaxed">
-                           {cat.description}
+                           {cat.description || "Premium quality Nepalese organic products sourced naturally from high altitude farms."}
                         </p>
                      </div>
 
                      <div className="w-full">
-                        <UniversalButton href={`/products/${cat.id}`} className="w-full">
+                        <UniversalButton href={`/products?category=${cat.slug}`} className="w-full">
                            Explore
                         </UniversalButton>
                      </div>

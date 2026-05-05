@@ -1,0 +1,91 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Category {
+  id          String    @id @default(uuid())
+  name        String
+  slug        String    @unique
+  description String?
+  imageUrl    String?   // New field for landing page cards
+  products    Product[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Product {
+  id            String   @id @default(uuid())
+  code          String   @unique
+  name          String
+  nepaliName    String?
+  botanicalName String?
+  category      Category @relation(fields: [categoryId], references: [id])
+  categoryId    String
+  imageUrl      String?  // New field for product photos
+  description   String?
+  hsCode        String?
+  barcode       String?
+  rate          String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Gallery {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  imageUrl    String
+  altText     String?
+  category    String?  // Optional: to group images (e.g., 'farm', 'products', 'events')
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ContactMessage {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String?
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model AboutContent {
+  id        String   @id @default(uuid())
+  title     String
+  subtitle  String?
+  content   String
+  imageUrl  String?
+  order     Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model WorkflowStep {
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  imageUrl    String? 
+  stepNumber  Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+model SectionHeading {
+  id        String   @id @default(uuid())
+  key       String   @unique // e.g., 'gallery', 'products', 'about', 'workflow'
+  title     String
+  subtitle  String?
+  updatedAt DateTime @updatedAt
+}
